@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91B06B5A-0BAF-4862-A800-B36304D4826E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApp</RootNamespace>
+    <AssemblyName>WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2Controller\hello1.htm" />
+    <Content Include="2Controller\hello2.htm" />
+    <Content Include="2Controller\hello3.htm" />
+    <Content Include="2Controller\hello4.htm" />
+    <Content Include="2Controller\hello5.htm" />
+    <Content Include="2Controller\phones\dell-streak-7.0.jpg" />
+    <Content Include="2Controller\phones\dell-streak-7.1.jpg" />
+    <Content Include="2Controller\phones\dell-streak-7.2.jpg" />
+    <Content Include="2Controller\phones\dell-streak-7.3.jpg" />
+    <Content Include="2Controller\phones\dell-streak-7.4.jpg" />
+    <Content Include="2Controller\phones\dell-venue.0.jpg" />
+    <Content Include="2Controller\phones\dell-venue.1.jpg" />
+    <Content Include="2Controller\phones\dell-venue.2.jpg" />
+    <Content Include="2Controller\phones\dell-venue.3.jpg" />
+    <Content Include="2Controller\phones\dell-venue.4.jpg" />
+    <Content Include="2Controller\phones\dell-venue.5.jpg" />
+    <Content Include="2Controller\phones\droid-2-global-by-motorola.0.jpg" />
+    <Content Include="2Controller\phones\droid-2-global-by-motorola.1.jpg" />
+    <Content Include="2Controller\phones\droid-2-global-by-motorola.2.jpg" />
+    <Content Include="2Controller\phones\droid-pro-by-motorola.0.jpg" />
+    <Content Include="2Controller\phones\droid-pro-by-motorola.1.jpg" />
+    <Content Include="2Controller\phones\lg-axis.0.jpg" />
+    <Content Include="2Controller\phones\lg-axis.1.jpg" />
+    <Content Include="2Controller\phones\lg-axis.2.jpg" />
+    <Content Include="2Controller\phones\motorola-atrix-4g.0.jpg" />
+    <Content Include="2Controller\phones\motorola-atrix-4g.1.jpg" />
+    <Content Include="2Controller\phones\motorola-atrix-4g.2.jpg" />
+    <Content Include="2Controller\phones\motorola-atrix-4g.3.jpg" />
+    <Content Include="2Controller\phones\motorola-bravo-with-motoblur.0.jpg" />
+    <Content Include="2Controller\phones\motorola-bravo-with-motoblur.1.jpg" />
+    <Content Include="2Controller\phones\motorola-bravo-with-motoblur.2.jpg" />
+    <Content Include="2Controller\phones\motorola-charm-with-motoblur.0.jpg" />
+    <Content Include="2Controller\phones\motorola-charm-with-motoblur.1.jpg" />
+    <Content Include="2Controller\phones\motorola-charm-with-motoblur.2.jpg" />
+    <Content Include="2Controller\phones\motorola-defy-with-motoblur.0.jpg" />
+    <Content Include="2Controller\phones\motorola-defy-with-motoblur.1.jpg" />
+    <Content Include="2Controller\phones\motorola-defy-with-motoblur.2.jpg" />
+    <Content Include="2Controller\phones\motorola-xoom-with-wi-fi.0.jpg" />
+    <Content Include="2Controller\phones\motorola-xoom-with-wi-fi.1.jpg" />
+    <Content Include="2Controller\phones\motorola-xoom-with-wi-fi.2.jpg" />
+    <Content Include="2Controller\phones\motorola-xoom-with-wi-fi.3.jpg" />
+    <Content Include="2Controller\phones\motorola-xoom-with-wi-fi.4.jpg" />
+    <Content Include="2Controller\phones\motorola-xoom-with-wi-fi.5.jpg" />
+    <Content Include="2Controller\phones\motorola-xoom.0.jpg" />
+    <Content Include="2Controller\phones\motorola-xoom.1.jpg" />
+    <Content Include="2Controller\phones\motorola-xoom.2.jpg" />
+    <Content Include="2Controller\phones\nexus-s.0.jpg" />
+    <Content Include="2Controller\phones\nexus-s.1.jpg" />
+    <Content Include="2Controller\phones\nexus-s.2.jpg" />
+    <Content Include="2Controller\phones\nexus-s.3.jpg" />
+    <Content Include="2Controller\phones\samsung-galaxy-tab.0.jpg" />
+    <Content Include="2Controller\phones\samsung-galaxy-tab.1.jpg" />
+    <Content Include="2Controller\phones\samsung-galaxy-tab.2.jpg" />
+    <Content Include="2Controller\phones\samsung-galaxy-tab.3.jpg" />
+    <Content Include="2Controller\phones\samsung-galaxy-tab.4.jpg" />
+    <Content Include="2Controller\phones\samsung-galaxy-tab.5.jpg" />
+    <Content Include="2Controller\phones\samsung-galaxy-tab.6.jpg" />
+    <Content Include="2Controller\phones\samsung-gem.0.jpg" />
+    <Content Include="2Controller\phones\samsung-gem.1.jpg" />
+    <Content Include="2Controller\phones\samsung-gem.2.jpg" />
+    <Content Include="2Controller\phones\samsung-mesmerize-a-galaxy-s-phone.0.jpg" />
+    <Content Include="2Controller\phones\samsung-mesmerize-a-galaxy-s-phone.1.jpg" />
+    <Content Include="2Controller\phones\samsung-mesmerize-a-galaxy-s-phone.2.jpg" />
+    <Content Include="2Controller\phones\samsung-mesmerize-a-galaxy-s-phone.3.jpg" />
+    <Content Include="2Controller\phones\samsung-showcase-a-galaxy-s-phone.0.jpg" />
+    <Content Include="2Controller\phones\samsung-showcase-a-galaxy-s-phone.1.jpg" />
+    <Content Include="2Controller\phones\samsung-showcase-a-galaxy-s-phone.2.jpg" />
+    <Content Include="2Controller\phones\samsung-transform.0.jpg" />
+    <Content Include="2Controller\phones\samsung-transform.1.jpg" />
+    <Content Include="2Controller\phones\samsung-transform.2.jpg" />
+    <Content Include="2Controller\phones\samsung-transform.3.jpg" />
+    <Content Include="2Controller\phones\samsung-transform.4.jpg" />
+    <Content Include="2Controller\phones\sanyo-zio.0.jpg" />
+    <Content Include="2Controller\phones\sanyo-zio.1.jpg" />
+    <Content Include="2Controller\phones\sanyo-zio.2.jpg" />
+    <Content Include="2Controller\phones\t-mobile-g2.0.jpg" />
+    <Content Include="2Controller\phones\t-mobile-g2.1.jpg" />
+    <Content Include="2Controller\phones\t-mobile-g2.2.jpg" />
+    <Content Include="2Controller\phones\t-mobile-mytouch-4g.0.jpg" />
+    <Content Include="2Controller\phones\t-mobile-mytouch-4g.1.jpg" />
+    <Content Include="2Controller\phones\t-mobile-mytouch-4g.2.jpg" />
+    <Content Include="2Controller\phones\t-mobile-mytouch-4g.3.jpg" />
+    <Content Include="2Controller\phones\t-mobile-mytouch-4g.4.jpg" />
+    <Content Include="2Controller\phones\t-mobile-mytouch-4g.5.jpg" />
+    <Content Include="assets\bootstrap-3.1.1\css\bootstrap-theme.css" />
+    <Content Include="assets\bootstrap-3.1.1\css\bootstrap-theme.min.css" />
+    <Content Include="assets\bootstrap-3.1.1\css\bootstrap.css" />
+    <Content Include="assets\bootstrap-3.1.1\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap-3.1.1\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\bootstrap-3.1.1\js\bootstrap.js" />
+    <Content Include="assets\bootstrap-3.1.1\js\bootstrap.min.js" />
+    <Content Include="hello1.htm" />
+    <Content Include="hello2.htm" />
+    <Content Include="Mail\controllers.js" />
+    <Content Include="Mail\detail.html" />
+    <Content Include="Mail\index.html" />
+    <Content Include="Mail\list.html" />
+    <Content Include="module1.html" />
+    <Content Include="scripts\angular-route.js" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-1.7.1.min.js" />
+    <Content Include="ShopCart.htm" />
+    <Content Include="step-3\app.css" />
+    <Content Include="step-3\app.js" />
+    <Content Include="step-3\controllers.js" />
+    <Content Include="step-3\img\glyphicons-halflings-white.png" />
+    <Content Include="step-3\img\glyphicons-halflings.png" />
+    <Content Include="step-3\img\phones\dell-streak-7.0.jpg" />
+    <Content Include="step-3\img\phones\dell-streak-7.1.jpg" />
+    <Content Include="step-3\img\phones\dell-streak-7.2.jpg" />
+    <Content Include="step-3\img\phones\dell-streak-7.3.jpg" />
+    <Content Include="step-3\img\phones\dell-streak-7.4.jpg" />
+    <Content Include="step-3\img\phones\dell-venue.0.jpg" />
+    <Content Include="step-3\img\phones\dell-venue.1.jpg" />
+    <Content Include="step-3\img\phones\dell-venue.2.jpg" />
+    <Content Include="step-3\img\phones\dell-venue.3.jpg" />
+    <Content Include="step-3\img\phones\dell-venue.4.jpg" />
+    <Content Include="step-3\img\phones\dell-venue.5.jpg" />
+    <Content Include="step-3\img\phones\droid-2-global-by-motorola.0.jpg" />
+    <Content Include="step-3\img\phones\droid-2-global-by-motorola.1.jpg" />
+    <Content Include="step-3\img\phones\droid-2-global-by-motorola.2.jpg" />
+    <Content Include="step-3\img\phones\droid-pro-by-motorola.0.jpg" />
+    <Content Include="step-3\img\phones\droid-pro-by-motorola.1.jpg" />
+    <Content Include="step-3\img\phones\lg-axis.0.jpg" />
+    <Content Include="step-3\img\phones\lg-axis.1.jpg" />
+    <Content Include="step-3\img\phones\lg-axis.2.jpg" />
+    <Content Include="step-3\img\phones\motorola-atrix-4g.0.jpg" />
+    <Content Include="step-3\img\phones\motorola-atrix-4g.1.jpg" />
+    <Content Include="step-3\img\phones\motorola-atrix-4g.2.jpg" />
+    <Content Include="step-3\img\phones\motorola-atrix-4g.3.jpg" />
+    <Content Include="step-3\img\phones\motorola-bravo-with-motoblur.0.jpg" />
+    <Content Include="step-3\img\phones\motorola-bravo-with-motoblur.1.jpg" />
+    <Content Include="step-3\img\phones\motorola-bravo-with-motoblur.2.jpg" />
+    <Content Include="step-3\img\phones\motorola-charm-with-motoblur.0.jpg" />
+    <Content Include="step-3\img\phones\motorola-charm-with-motoblur.1.jpg" />
+    <Content Include="step-3\img\phones\motorola-charm-with-motoblur.2.jpg" />
+    <Content Include="step-3\img\phones\motorola-defy-with-motoblur.0.jpg" />
+    <Content Include="step-3\img\phones\motorola-defy-with-motoblur.1.jpg" />
+    <Content Include="step-3\img\phones\motorola-defy-with-motoblur.2.jpg" />
+    <Content Include="step-3\img\phones\motorola-xoom-with-wi-fi.0.jpg" />
+    <Content Include="step-3\img\phones\motorola-xoom-with-wi-fi.1.jpg" />
+    <Content Include="step-3\img\phones\motorola-xoom-with-wi-fi.2.jpg" />
+    <Content Include="step-3\img\phones\motorola-xoom-with-wi-fi.3.jpg" />
+    <Content Include="step-3\img\phones\motorola-xoom-with-wi-fi.4.jpg" />
+    <Content Include="step-3\img\phones\motorola-xoom-with-wi-fi.5.jpg" />
+    <Content Include="step-3\img\phones\motorola-xoom.0.jpg" />
+    <Content Include="step-3\img\phones\motorola-xoom.1.jpg" />
+    <Content Include="step-3\img\phones\motorola-xoom.2.jpg" />
+    <Content Include="step-3\img\phones\nexus-s.0.jpg" />
+    <Content Include="step-3\img\phones\nexus-s.1.jpg" />
+    <Content Include="step-3\img\phones\nexus-s.2.jpg" />
+    <Content Include="step-3\img\phones\nexus-s.3.jpg" />
+    <Content Include="step-3\img\phones\samsung-galaxy-tab.0.jpg" />
+    <Content Include="step-3\img\phones\samsung-galaxy-tab.1.jpg" />
+    <Content Include="step-3\img\phones\samsung-galaxy-tab.2.jpg" />
+    <Content Include="step-3\img\phones\samsung-galaxy-tab.3.jpg" />
+    <Content Include="step-3\img\phones\samsung-galaxy-tab.4.jpg" />
+    <Content Include="step-3\img\phones\samsung-galaxy-tab.5.jpg" />
+    <Content Include="step-3\img\phones\samsung-galaxy-tab.6.jpg" />
+    <Content Include="step-3\img\phones\samsung-gem.0.jpg" />
+    <Content Include="step-3\img\phones\samsung-gem.1.jpg" />
+    <Content Include="step-3\img\phones\samsung-gem.2.jpg" />
+    <Content Include="step-3\img\phones\samsung-mesmerize-a-galaxy-s-phone.0.jpg" />
+    <Content Include="step-3\img\phones\samsung-mesmerize-a-galaxy-s-phone.1.jpg" />
+    <Content Include="step-3\img\phones\samsung-mesmerize-a-galaxy-s-phone.2.jpg" />
+    <Content Include="step-3\img\phones\samsung-mesmerize-a-galaxy-s-phone.3.jpg" />
+    <Content Include="step-3\img\phones\samsung-showcase-a-galaxy-s-phone.0.jpg" />
+    <Content Include="step-3\img\phones\samsung-showcase-a-galaxy-s-phone.1.jpg" />
+    <Content Include="step-3\img\phones\samsung-showcase-a-galaxy-s-phone.2.jpg" />
+    <Content Include="step-3\img\phones\samsung-transform.0.jpg" />
+    <Content Include="step-3\img\phones\samsung-transform.1.jpg" />
+    <Content Include="step-3\img\phones\samsung-transform.2.jpg" />
+    <Content Include="step-3\img\phones\samsung-transform.3.jpg" />
+    <Content Include="step-3\img\phones\samsung-transform.4.jpg" />
+    <Content Include="step-3\img\phones\sanyo-zio.0.jpg" />
+    <Content Include="step-3\img\phones\sanyo-zio.1.jpg" />
+    <Content Include="step-3\img\phones\sanyo-zio.2.jpg" />
+    <Content Include="step-3\img\phones\t-mobile-g2.0.jpg" />
+    <Content Include="step-3\img\phones\t-mobile-g2.1.jpg" />
+    <Content Include="step-3\img\phones\t-mobile-g2.2.jpg" />
+    <Content Include="step-3\img\phones\t-mobile-mytouch-4g.0.jpg" />
+    <Content Include="step-3\img\phones\t-mobile-mytouch-4g.1.jpg" />
+    <Content Include="step-3\img\phones\t-mobile-mytouch-4g.2.jpg" />
+    <Content Include="step-3\img\phones\t-mobile-mytouch-4g.3.jpg" />
+    <Content Include="step-3\img\phones\t-mobile-mytouch-4g.4.jpg" />
+    <Content Include="step-3\img\phones\t-mobile-mytouch-4g.5.jpg" />
+    <Content Include="step-3\index.html" />
+    <Content Include="step-3\phone-detail.html" />
+    <Content Include="step-3\phone-list.html" />
+    <Content Include="styles\bootstrap-2.3.2.css" />
+    <Content Include="styles\bootstrap.min.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="2Controller\phones.json" />
+    <None Include="assets\bootstrap-3.1.1\css\bootstrap-theme.css.map" />
+    <None Include="assets\bootstrap-3.1.1\css\bootstrap.css.map" />
+    <None Include="assets\bootstrap-3.1.1\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="assets\bootstrap-3.1.1\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="assets\bootstrap-3.1.1\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="step-3\img\.gitkeep" />
+    <None Include="step-3\phones\dell-streak-7.json" />
+    <None Include="step-3\phones\dell-venue.json" />
+    <None Include="step-3\phones\droid-2-global-by-motorola.json" />
+    <None Include="step-3\phones\droid-pro-by-motorola.json" />
+    <None Include="step-3\phones\lg-axis.json" />
+    <None Include="step-3\phones\motorola-atrix-4g.json" />
+    <None Include="step-3\phones\motorola-bravo-with-motoblur.json" />
+    <None Include="step-3\phones\motorola-charm-with-motoblur.json" />
+    <None Include="step-3\phones\motorola-defy-with-motoblur.json" />
+    <None Include="step-3\phones\motorola-xoom-with-wi-fi.json" />
+    <None Include="step-3\phones\motorola-xoom.json" />
+    <None Include="step-3\phones\nexus-s.json" />
+    <None Include="step-3\phones\phones.json" />
+    <None Include="step-3\phones\samsung-galaxy-tab.json" />
+    <None Include="step-3\phones\samsung-gem.json" />
+    <None Include="step-3\phones\samsung-mesmerize-a-galaxy-s-phone.json" />
+    <None Include="step-3\phones\samsung-showcase-a-galaxy-s-phone.json" />
+    <None Include="step-3\phones\samsung-transform.json" />
+    <None Include="step-3\phones\sanyo-zio.json" />
+    <None Include="step-3\phones\t-mobile-g2.json" />
+    <None Include="step-3\phones\t-mobile-mytouch-4g.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27956</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,49 @@
+﻿<html ng-app='myApp'>
+<body ng-controller='TextController'>
+    <p>
+        {{someText.message}}</p>
+    <p ng-bind="someText.message"></p>
+
+    <form ng-submit="requestFunding()">
+    <input type="checkbox" ng-model="someText.youCheckedIt">
+    <br />
+    Starting: 
+    <!--<input ng-change="computeNeeded()" ng-model="someText.startingEstimate">-->
+
+    <input ng-model="someText.startingEstimate">
+Recommendation: {{needed}}
+
+<button>Fund my startup!</button>
+<button ng-click="reset()">Reset</button>
+    </form>
+
+
+    <script src="scripts/angular.min.js" type="text/javascript"></script>
+    <script>
+        var myAppModule = angular.module('myApp', []);
+        myAppModule.controller('TextController', function ($scope) {
+            var someText = {};
+            someText.message = 'You have started your journey.';
+            someText.youCheckedIt = true;
+            someText.startingEstimate = 0;
+            
+            $scope.someText = someText;
+
+            var computeNeeded = function () {
+                $scope.needed = $scope.someText.startingEstimate * 10;
+            };
+
+            $scope.$watch('someText.startingEstimate', computeNeeded);
+
+            $scope.requestFunding = function () {
+                window.alert("Sorry, please get more customers first.");
+            };
+
+            $scope.reset = function () {
+                $scope.startingEstimate = 0;
+            };
+
+        });
+    </script>
+</body>
+</html>

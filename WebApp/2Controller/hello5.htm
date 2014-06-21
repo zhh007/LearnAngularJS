@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html ng-app ng-controller="PhoneListCtrl">
+<head>
+    <title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
+    <link href="../styles/bootstrap-2.3.2.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    body {
+  padding-top: 20px;
+}
+
+.phones {
+  list-style: none;
+}
+
+.thumb {
+  float: left;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  height: 100px;
+  width: 100px;
+}
+
+.phones li {
+  clear: both;
+  height: 115px;
+  padding-top: 15px;
+}
+    </style>
+    <script src="../scripts/angular.min.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        function PhoneListCtrl($scope, $http) {
+            $http.get('phones.json').success(function (data) {
+                $scope.phones = data;
+            });
+            $scope.orderProp = 'age';
+        }
+        //如果压缩函数，要显示注入
+        //PhoneListCtrl.$inject = ['$scope', '$http'];
+
+        /*
+        另一种方法也可以用来指定依赖列表并且避免压缩问题——使用Javascript数组方式构造控制器：
+        把要注入的服务放到一个字符串数组（代表依赖的名字）里，数组最后一个元素是控制器的方法函数：
+        var PhoneListCtrl = ['$scope', '$http', function($scope, $http) {  constructor body  }];
+        */
+
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row-fluid">
+        <div class="span2">
+            Search:
+            <input ng-model="query">
+            Sort by:
+            <select ng-model="orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="age">Newest</option>
+            </select>
+            </div>
+            <div class="span10">
+            <ul class="phones">
+                <li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
+                    <a href="#/phones/{{phone.id}}" class="thumb">
+                        <img ng-src="{{phone.imageUrl}}"></a> <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+                    <p>
+                        {{phone.snippet}}</p>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div id="status">
+        Current filter: {{query}}</div>
+</body>
+</html>
